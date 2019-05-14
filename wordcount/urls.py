@@ -18,7 +18,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home,name='home'),
+    path('', views.homepage,name='home'),
     path('contact/',views.contact),
     path('count/',views.count,name='count'),
     ##path('countsss/',views.count,name='count') if make change in path name like countss then  also we can open website

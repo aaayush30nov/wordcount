@@ -1,0 +1,18 @@
+<h1>Counted</h1>
+
+<a href="{% url 'home' %}">Back to homepage</a>
+
+<h2>Your text</h2>
+{{fulltext}}
+<!-- To print the value of fulltext on webpage -->
+<br>
+<h2>Words Counts</h2>
+Total words = {{words}}
+<br>
+<br>
+
+<!-- {{worddictionary}} -->
+{% for word ,value in worddictionary %}
+{{word}} = {{value}}
+<br>
+{% endfor %}

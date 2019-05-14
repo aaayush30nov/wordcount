@@ -1,0 +1,17 @@
+<h1>Wordcount</h1>
+Welcome to wordcount website
+<br>
+{{ name }}
+
+<!-- <form action="count"> -->
+	<!-- we can open website by above line also but if change the path name we cannot open by above code
+	 -->
+<form action="{% url 'count' %}">
+	<br>
+	<textarea name="fulltextarea" cols="40" rows="10"></textarea>
+	<br>
+	<input type="submit" value="count"/>
+
+</form>
+
+<a href="{% url 'about' %}">About us</a>
